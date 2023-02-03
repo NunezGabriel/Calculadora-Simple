@@ -1,0 +1,90 @@
+:root{
+    --pink: rgb(220, 59, 214);
+    --soft-pink: rgb(219, 112, 216);
+    --black: black;
+    --orange: orange;
+    --hard-orange: rgb(255, 196, 88);
+    --white: white;
+    --purplegod: rgb(115, 0, 182);
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+}
+body{
+    background-color: var(--pink);
+    margin: 0;
+    padding: 0;
+}
+.section{
+    display: grid;
+    width: 100%;
+    height: 780px;
+    background-color: var(--pink);
+    place-items: center;
+}
+.calculator-body{
+    background-color: var(--soft-pink);
+    width: 525px;
+    height: 635px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    overflow: hidden;
+    place-items: center;
+}
+.result-screen{
+    width: 420px;
+    height: 120px;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+}
+.keys-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+.inputs{
+    display: flex;
+    column-gap: 22px;
+    justify-content: center;
+}
+.val{
+    margin-top: 12px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--soft-pink);
+    border: 2px solid var(--orange);
+    outline: none;
+    color: var(--white);
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    transition: 1s;
+}
+.val:hover{
+    transform: scale(1.2);
+    border: 2px solid var(--hard-orange);
+}
+.buttons{
+    width: 420px;
+    height: 240px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  repeat(2,1fr);
+    gap: 20px;
+    place-self: center;
+}
+.butonN{
+    border-radius: 10px;
+    background-color: var(--orange);
+    display: grid;
+    place-items: center ;
+    font-size: 40px;
+    color: var(--white);
+    transition: 1s;
+}
+.butonN:hover{
+    background-color: var(--hard-orange);
+}
