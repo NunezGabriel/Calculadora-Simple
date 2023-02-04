@@ -3,4 +3,4 @@ Este proyecto es una calculadora simple para reforzar conocimientos de manipulac
 en esta podremos sumar, restar, multiplicar, dividir, potenciar, y sacar porcentaje
 imagen de calculadore ⬇️
 
-<img src ='./Screenshot 2023-02-04 at 17.00.50.png'>
+<img src ='./img/Screenshot 2023-02-04 at 17.00.50.png'>
