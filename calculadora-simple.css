@@ -1,15 +1,14 @@
 :root{
-    --pink: rgb(220, 59, 214);
-    --soft-pink: rgb(219, 112, 216);
-    --black: black;
-    --orange: orange;
-    --hard-orange: rgb(255, 196, 88);
+    --pink: rgb(32, 32, 32);
+    --soft-pink: rgb(50, 50, 50);
+    --orange: rgb(6, 141, 40);
+    --hard-orange: rgb(71, 248, 86);
     --white: white;
     --purplegod: rgb(115, 0, 182);
 }
 html{
     box-sizing: border-box;
-    font-family: 'Lobster', cursive;
+    font-family: 'Inconsolata', monospace;
 }
 body{
     background-color: var(--pink);
@@ -38,6 +37,8 @@ body{
     height: 120px;
     border: 2px solid var(--orange);
     border-radius: 10px;
+    display: grid;
+    place-items: center;
 }
 .keys-container{
     width: 100%;
@@ -60,7 +61,7 @@ body{
     outline: none;
     color: var(--white);
     font-size: 25px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Inconsolata', monospace;
     transition: 1s;
 }
 .val:hover{
@@ -87,4 +88,8 @@ body{
 }
 .butonN:hover{
     background-color: var(--hard-orange);
+}
+#result{
+    color: var(--white);
+    font-size: 50px;
 }
